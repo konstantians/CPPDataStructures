@@ -140,12 +140,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\classes\DynamicArray.cpp" />
+    <ClCompile Include="src\classes\Queue.cpp" />
     <ClCompile Include="src\classes\SinglyLinkedList.cpp" />
     <ClCompile Include="src\classes\Stack.cpp" />
     <ClCompile Include="src\Main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\classes\DynamicArray.h" />
+    <ClInclude Include="src\classes\Queue.h" />
     <ClInclude Include="src\classes\SinglyLinkedList.h" />
     <ClInclude Include="src\classes\Stack.h" />
   </ItemGroup>
