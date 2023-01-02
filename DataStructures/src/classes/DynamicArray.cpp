@@ -13,7 +13,7 @@ DynamicArray<T>::DynamicArray(int capacity) : m_Length(0), m_Capacity(capacity)
 
 template<typename T>
 DynamicArray<T>::~DynamicArray() {
-	delete m_InternalArray;
+	delete[] m_InternalArray;
 }
 
 template<typename T>
@@ -159,7 +159,7 @@ void DynamicArray<T>::Sort() {
 
 template<typename T>
 void DynamicArray<T>::Clear() {
-	delete m_InternalArray;
+	delete[] m_InternalArray;
 	m_Capacity = 5;
 	m_Length = 0;
 	m_InternalArray = new T[5];
