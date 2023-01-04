@@ -1,6 +1,5 @@
 #pragma once
 #include "DynamicArray.h"
-#include "DynamicArray.cpp"
 #include <iostream>
 
 template <typename T>

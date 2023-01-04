@@ -7,6 +7,7 @@
     <ClCompile Include="src\classes\Stack.cpp" />
     <ClCompile Include="src\classes\Queue.cpp" />
     <ClCompile Include="src\classes\PriorityQueue.cpp" />
+    <ClCompile Include="src\classes\BinarySearchTree.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\classes\DynamicArray.h" />
@@ -14,5 +15,6 @@
     <ClInclude Include="src\classes\Stack.h" />
     <ClInclude Include="src\classes\Queue.h" />
     <ClInclude Include="src\classes\PriorityQueue.h" />
+    <ClInclude Include="src\classes\BinarySearchTree.h" />
   </ItemGroup>
 </Project>

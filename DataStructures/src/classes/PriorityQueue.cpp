@@ -1,9 +1,11 @@
 #include "PriorityQueue.h"
 
+#define print(x) std::cout << x << std::endl;
+
 template<typename T>    
 PriorityQueue<T>::~PriorityQueue()
 {
-    delete[] m_InternalDynamicArray;
+    delete m_InternalDynamicArray;
 }
 
 template<typename T>
