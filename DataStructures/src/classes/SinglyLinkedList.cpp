@@ -1,5 +1,6 @@
 #include "SinglyLinkedList.h"
 
+
 template<typename T>
 SinglyLinkedList<T>::~SinglyLinkedList() {
 	Clear();
@@ -86,6 +87,7 @@ void SinglyLinkedList<T>::AppendElementAtIndex(int index, T value) {
 
 template<typename T>
 T SinglyLinkedList<T>::RemoveLastElement() {
+	
 	if (m_Length == 0) {
 		throw("there are not elements in the linked list");
 	}
@@ -118,6 +120,7 @@ T SinglyLinkedList<T>::RemoveLastElement() {
 
 template<typename T>
 T SinglyLinkedList<T>::RemoveFirstElement() {
+	
 	if (m_Length == 0) {
 		throw("there are not elements in the linked list");
 	}
@@ -230,6 +233,26 @@ T SinglyLinkedList<T>::ReturnElementAtIndex(int index) {
 }
 
 template<typename T>
+T SinglyLinkedList<T>::IterrateOverList() {
+
+	if (m_CurrentNode == nullptr) {
+		m_CurrentNode = m_Head;
+	}
+
+	//prepare the returned value
+	T returnedValue = m_CurrentNode->data;
+	//move to the next node
+	m_CurrentNode = m_CurrentNode->pointer;
+	
+	return returnedValue;
+}
+
+template<typename T>
+void SinglyLinkedList<T>::ResetIterator() {
+	m_CurrentNode = nullptr;
+}
+
+template<typename T>
 bool SinglyLinkedList<T>::Contains(T value) {
 
 	if (m_Length == 0) {
@@ -266,17 +289,18 @@ int SinglyLinkedList<T>::ContainsAtIndex(T value) {
 }
 
 template<typename T>
-int SinglyLinkedList<T>::GetSize() {
+int SinglyLinkedList<T>::GetSize() const{
 	return m_Length;
 }
 
 template<typename T>
-bool SinglyLinkedList<T>::IsEmpty() {
+bool SinglyLinkedList<T>::IsEmpty() const{
 	return m_Length == 0;
 }
 
 template<typename T>
 void SinglyLinkedList<T>::Clear() {
+
 	Node* traversingNode = m_Head;
 	for (int i = 0; i < m_Length - 1; i++) {
 	Node* tempNode = traversingNode->pointer;

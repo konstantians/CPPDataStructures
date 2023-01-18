@@ -141,6 +141,7 @@
   <ItemGroup>
     <ClCompile Include="src\classes\BinarySearchTree.cpp" />
     <ClCompile Include="src\classes\DynamicArray.cpp" />
+    <ClCompile Include="src\classes\HashTableSeparateChaining.cpp" />
     <ClCompile Include="src\classes\PriorityQueue.cpp" />
     <ClCompile Include="src\classes\Queue.cpp" />
     <ClCompile Include="src\classes\SinglyLinkedList.cpp" />
@@ -150,6 +151,7 @@
   <ItemGroup>
     <ClInclude Include="src\classes\BinarySearchTree.h" />
     <ClInclude Include="src\classes\DynamicArray.h" />
+    <ClInclude Include="src\classes\HashTableSeparateChaining.h" />
     <ClInclude Include="src\classes\PriorityQueue.h" />
     <ClInclude Include="src\classes\Queue.h" />
     <ClInclude Include="src\classes\SinglyLinkedList.h" />
